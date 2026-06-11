@@ -2,7 +2,7 @@ name: Tamil Calendar Daily Email
 
 on:
   schedule:
-    - cron: '30 2 * * *'   # Runs 8:00 AM IST (2:30 AM UTC) every day
+    - cron: '40 18 * * *'   # Runs at 12:10 AM IST
   workflow_dispatch:        # Allows manual trigger from GitHub UI
 
 env:
