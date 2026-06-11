@@ -2,12 +2,17 @@ import os
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime
+import pytz
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 from email.mime.base import MIMEBase
 from email import encoders
+
+
+IST = pytz.timezone("Asia/Kolkata")
+now = datetime.now(IST)
 
 # ─────────────────────────────────────────
 # CONFIG — reads from GitHub Secrets
